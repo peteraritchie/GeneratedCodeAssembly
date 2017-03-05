@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>PRI.GeneratedCodeAssembly</id>
+    <version>$version$</version>
+    <authors>$author$</authors>
+    <licenseUrl>https://raw.githubusercontent.com/peteraritchie/GeneratedCodeAssembly/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/peteraritchie/GeneratedCodeAssembly/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>Code Generation Assembly Cached</tags>
+  </metadata>
+</package>
