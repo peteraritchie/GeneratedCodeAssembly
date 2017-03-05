@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("PRI.GeneratedCodeAssembly.Interfaces")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Quicken Loans")]
+[assembly: AssemblyCompany("Peter A. Ritchie")]
 [assembly: AssemblyProduct("PRI.GeneratedCodeAssembly.Interfaces")]
-[assembly: AssemblyCopyright("Copyright © Quicken Loans 2017")]
+[assembly: AssemblyCopyright("Copyright © Peter A. Ritchie 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

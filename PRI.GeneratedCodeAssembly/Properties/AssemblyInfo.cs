@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("PRI.GeneratedCodeAssembly")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Cache generated code to assembly for quick re-load")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Quicken Loans")]
+[assembly: AssemblyCompany("Peter A. Ritchie")]
 [assembly: AssemblyProduct("PRI.GeneratedCodeAssembly")]
-[assembly: AssemblyCopyright("Copyright © Quicken Loans 2017")]
+[assembly: AssemblyCopyright("Copyright © Peter A. Ritchie 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
