@@ -9,36 +9,36 @@ namespace PRI.GeneratedCodeAssembly.Tests
 {
 	public class UsingUnaryInstruction
 	{
-		private ILGenerator _ilGenerator;
+		private readonly ILGenerator _ilGenerator;
 
 		[Fact]
 		public void MethodInfoOperandSucceeds()
 		{
-			Assert.DoesNotThrow(()=> new UnaryInstruction(OpCodes.Callvirt, typeof(Customer2).GetProperty(nameof(Customer2.Age)).GetSetMethod()));
+			new UnaryInstruction(OpCodes.Callvirt, typeof(Customer2).GetProperty(nameof(Customer2.Age)).GetSetMethod());
 		}
 
 		[Fact]
 		public void TypeOperandSucceeds()
 		{
-			Assert.DoesNotThrow(()=> new UnaryInstruction(OpCodes.Ldobj, typeof(Customer2)));
+			new UnaryInstruction(OpCodes.Ldobj, typeof(Customer2));
 		}
 
 		[Fact]
 		public void FieldInfoOperandSucceeds()
 		{
-			Assert.DoesNotThrow(()=> new UnaryInstruction(OpCodes.Ldfld, typeof(Customer2).GetField(nameof(Customer2.GivenName))));
+			new UnaryInstruction(OpCodes.Ldfld, typeof(Customer2).GetField(nameof(Customer2.GivenName)));
 		}
 
 		[Fact]
 		public void ConstructorInfoOperandSucceeds()
 		{
-			Assert.DoesNotThrow(()=> new UnaryInstruction(OpCodes.Newobj, typeof(Customer).GetConstructor(Type.EmptyTypes)));
+			new UnaryInstruction(OpCodes.Newobj, typeof(Customer).GetConstructor(Type.EmptyTypes));
 		}
 
 		[Fact]
 		public void IntOperandSucceeds()
 		{
-			Assert.DoesNotThrow(()=> new UnaryInstruction(OpCodes.Ldc_I4_S, 10));
+			new UnaryInstruction(OpCodes.Ldc_I4_S, 10);
 		}
 
 		public UsingUnaryInstruction()
@@ -58,7 +58,7 @@ namespace PRI.GeneratedCodeAssembly.Tests
 		public void MethodInfoOperandEmitSucceeds()
 		{
 			var unaryInstruction = new UnaryInstruction(OpCodes.Callvirt, typeof(Customer2).GetProperty(nameof(Customer2.Age)).GetSetMethod());
-			Assert.DoesNotThrow(() => unaryInstruction.Emit(_ilGenerator));
+			unaryInstruction.Emit(_ilGenerator);
 		}
 
 		[Fact]
@@ -66,7 +66,7 @@ namespace PRI.GeneratedCodeAssembly.Tests
 		{
 			var unaryInstruction = new UnaryInstruction(OpCodes.Ldobj, typeof(Customer2));
 
-			Assert.DoesNotThrow(() => unaryInstruction.Emit(_ilGenerator));
+			unaryInstruction.Emit(_ilGenerator);
 		}
 
 		[Fact]
@@ -74,7 +74,7 @@ namespace PRI.GeneratedCodeAssembly.Tests
 		{
 			var unaryInstruction = new UnaryInstruction(OpCodes.Ldfld, typeof(Customer2).GetField(nameof(Customer2.GivenName)));
 
-			Assert.DoesNotThrow(() => unaryInstruction.Emit(_ilGenerator));
+			unaryInstruction.Emit(_ilGenerator);
 		}
 
 		[Fact]
@@ -82,7 +82,7 @@ namespace PRI.GeneratedCodeAssembly.Tests
 		{
 			var unaryInstruction = new UnaryInstruction(OpCodes.Newobj, typeof(Customer).GetConstructor(Type.EmptyTypes));
 
-			Assert.DoesNotThrow(() => unaryInstruction.Emit(_ilGenerator));
+			unaryInstruction.Emit(_ilGenerator);
 		}
 
 		[Fact]
@@ -90,7 +90,7 @@ namespace PRI.GeneratedCodeAssembly.Tests
 		{
 			var unaryInstruction = new UnaryInstruction(OpCodes.Ldc_I4_S, 10);
 
-			Assert.DoesNotThrow(() => unaryInstruction.Emit(_ilGenerator));
+			unaryInstruction.Emit(_ilGenerator);
 		}
 
 		[Fact]

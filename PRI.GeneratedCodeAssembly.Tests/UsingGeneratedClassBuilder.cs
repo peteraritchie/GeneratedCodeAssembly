@@ -11,7 +11,7 @@ namespace PRI.GeneratedCodeAssembly.Tests
 	public class UsingGeneratedClassBuilder
 	{
 		readonly GeneratedAssemblyBuilder _assemblyBuilder;
-		private GeneratedClassBuilder _generatedClassBuilder;
+		private readonly GeneratedClassBuilder _generatedClassBuilder;
 
 		public UsingGeneratedClassBuilder()
 		{
@@ -44,7 +44,7 @@ namespace PRI.GeneratedCodeAssembly.Tests
 				.WithInstruction(new NullaryInstruction(OpCodes.Ret))
 				.CommitMethod()
 				.CommitType();
-			Assert.DoesNotThrow(() => _generatedClassBuilder.Validate());
+			_generatedClassBuilder.Validate();
 		}
 
 		[Fact]
