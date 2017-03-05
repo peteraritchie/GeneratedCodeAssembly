@@ -1,4 +1,6 @@
 # GeneratedCodeAssembly
+[![Build status](https://ci.appveyor.com/api/projects/status/8v1cckeg0ruflp8f?svg=true)](https://ci.appveyor.com/project/peteraritchie/messaging-patterns)
+
 Cache generated code to assembly for quick re-load
 
 *GeneratedCodeAssembly* is a class to facilitate code generation while also caching it to an assembly for re-loading later to avoid re-generation.
